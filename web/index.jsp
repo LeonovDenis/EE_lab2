@@ -45,7 +45,7 @@
                     </tr>
                     <tr>
                         <td><input type="submit" name="b1" value="Сложить"/></td>
-                        <td><input type="reset" name="b2" value="Очистить"/>   
+                        <td><input type="submit" name="b2" value="Очистить"/>   
                         </td>
                     </tr>
                 </table>
@@ -60,7 +60,7 @@
                         <td><input type="submit" name="b1" value="Умножить"/>      
                         </td>
                         <td>
-                            <input type="reset" name="b2" value="Очистить"/>   
+                            <input type="submit" name="b2" value="Очистить"/>   
                         </td>
                     </tr>
                 </table>

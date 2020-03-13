@@ -60,7 +60,11 @@ public class Calc extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-
+        String x = request.getParameter("b2");
+        if (x != null) {
+            response.sendRedirect("index.jsp");
+            return;
+        }
         String n1 = request.getParameter("n1");
         String n2 = request.getParameter("n2");
         // Проверка является ли введённая строка "пустой"
@@ -87,10 +91,15 @@ public class Calc extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
+        String x = request.getParameter("b2");
+        if (x != null) {
+            response.sendRedirect("index.jsp");
+            return;
+        }
+
         String k1 = request.getParameter("k1");
         String k2 = request.getParameter("k2");
-        
-        
+
         // Проверка является ли введённая строка "пустой"
         String result = "";
         if (isNumeric(k1.trim()) && isNumeric(k2.trim())) {
